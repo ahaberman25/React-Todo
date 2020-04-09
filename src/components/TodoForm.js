@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, FormControl } from '@material-ui/core';
 
 class ToDoForm extends React.Component {
   // Constructor with state
@@ -31,7 +32,7 @@ class ToDoForm extends React.Component {
           value={this.state.toDo}
           onChange={this.handleChanges}
         />
-        <button>Add</button>
+        <Button color="primary" size="small" type="submit">Add Something To Do</Button>
       </form>
     );
   }

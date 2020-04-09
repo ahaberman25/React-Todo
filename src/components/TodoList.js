@@ -1,6 +1,7 @@
 // your components will all go in this `component` directory.
 // feel free to change this component.js into TodoList.js
 import React from "react";
+import { Button } from '@material-ui/core';
 
 import ToDo from "./Todo";
 
@@ -11,9 +12,9 @@ const ToDoList = props => {
       {props.todo.map(todo => (
         <ToDo key={todo.id} todo={todo} toggleToDo={props.toggleToDo} />
       ))}
-      <button className="clear-btn" onClick={props.clearDone}>
+      <Button className="clear-btn" variant="contained" color="secondary" size="small" onClick={props.clearDone}>
         Clear ToDo List
-      </button>
+      </Button>
     </div>
   );
 };
