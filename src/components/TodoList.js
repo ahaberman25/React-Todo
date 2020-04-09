@@ -7,7 +7,7 @@ import ToDo from "./Todo";
 const ToDoList = props => {
   console.log("ToDo List Props: ", props);
   return (
-    <div className="shopping-list">
+    <div className="todo-list">
       {props.todo.map(todo => (
         <ToDo key={todo.id} todo={todo} toggleToDo={props.toggleToDo} />
       ))}

@@ -28,8 +28,8 @@ class ToDoForm extends React.Component {
       <form onSubmit={this.submitToDo}>
         <input
           type="text"
-          name="item"
-          value={this.state.item}
+          name="toDo"
+          value={this.state.toDo}
           onChange={this.handleChanges}
         />
         <button>Add</button>
