@@ -25,11 +25,11 @@ class App extends React.Component {
     console.log("todo id", toDoId);
 
     this.setState({
-      toDo: this.state.toDoItems.map(todo => {
+      toDoItems: this.state.toDoItems.map(todo => {
         if (toDoId === todo.id) {
           return {
             ...todo,
-            done: !todo.purchased
+            done: !todo.done
           };
         }
         return todo;

@@ -11,7 +11,6 @@ class ToDoForm extends React.Component {
 
   handleChanges = e => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log("update", this.state.item);
   };
 
   // class property to submit form

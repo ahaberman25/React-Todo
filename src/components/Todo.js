@@ -1,7 +1,7 @@
 import React from "react";
 
 const ToDo = props => {
-  console.log("ToDo Props:", props);
+  console.log("ToDo items:", props);
   return (
     <div
       className={`todo${props.todo.done ? " done" : ""}`}
